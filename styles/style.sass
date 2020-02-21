@@ -17,6 +17,129 @@ $dark-grayish-red: hsl(0, 6%, 24%)
 $josefin-sans: 'Josefin Sans', sans-serif
 
 .body
+  background: #fff7f8 url("../images/bg-pattern-desktop.svg") no-repeat
+  //background-size: cover
   font-family: $josefin-sans
   font-size: 16px
 
+  header
+    padding: 5rem
+
+.left-column
+  .intro
+    padding: 5rem 1rem .5rem 5rem
+
+    h1
+      font-size: 4.5rem
+      text-transform: uppercase
+      font-weight: 300
+      color: $desaturated-red
+      letter-spacing: 1rem
+
+    strong
+      color: $dark-grayish-red
+      font-weight: 600
+
+    p
+      padding: 1rem 5rem 0 0
+      color: $desaturated-red
+      line-height: 1.7
+
+.form-inline
+  padding-left: 5rem
+
+  .form-control
+    border-radius: 40px
+    padding: 1.3rem 12rem 1.3rem 1.3rem
+    background: none
+
+  button
+    -webkit-box-shadow: 1px 6px 11px rgba(0,0,0,0.29)
+    -moz-box-shadow: 1px 6px 11px rgba(0,0,0,0.29)
+    box-shadow: 1px 6px 11px rgba(0,0,0,0.29)
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%))
+    border-color: transparent
+    padding: 0.6rem 2.3rem
+    border-radius: 40px
+    position: relative
+    left: -5rem
+
+
+  button:hover
+    background: linear-gradient(135deg, #FADADB 0%, #F8C8C8 100%)
+    border-color: transparent
+
+  .form-control::placeholder
+    font-size: 0.9rem
+    color: rgba(207,154,154,0.70)
+
+  .invalid-feedback
+    margin: 0
+    padding: 0
+
+.right-column
+  background: url('../images/hero-desktop.jpg') no-repeat
+  width: 610px
+  height: 800px
+
+.attribution
+  padding-top: 2rem
+  text-align: center
+  font-size: 0.9rem
+  color: $desaturated-red
+
+@media (max-width: 719px)
+  .body
+    header
+      padding: 2rem
+
+      img
+        width: 7rem
+
+  .mobile-pic
+    display: grid
+    margin: auto
+    width: 100%
+
+  .right-column
+    display: none
+
+  .left-column
+    .intro
+      padding: 5rem 0 0 0
+      margin: 0
+      text-align: center
+
+      h1
+        font-size: 3rem
+        margin: 0
+        padding: 0
+
+      p
+        font-size: 0.9rem
+        margin: 0
+        padding: 1rem 3rem
+
+    .form-inline
+      padding-left: 3.5rem
+
+    .form-control
+      margin: 0
+      padding: 1.3rem 5.8rem 1.3rem 1.3rem
+
+    button
+      position: relative
+      left: -40px
+      top: -8px
+
+@media (min-width: 720px)
+  .mobile-pic
+    display: none
+
+@media (min-width: 1440px)
+  .container-fluid
+    max-width: 1440px
+
+  .intro
+    p
+      padding: 1rem 9rem 0 0

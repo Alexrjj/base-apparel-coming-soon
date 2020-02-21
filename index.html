@@ -25,35 +25,34 @@
 
 </head>
 <body class="body">
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col">
-      <div class="header">
+    <div class="col-lg-6 col-md-12 left-column" style="
+    padding-left: 0;
+    padding-right: 0;
+">
+      <header>
         <img src="images/logo.svg" alt="">
+      </header>
+      <img class="mobile-pic" src="images/hero-mobile.jpg" alt="">
+
+      <div class="intro">
+        <h1>We're <strong>coming soon</strong></h1>
+        <p>Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
       </div>
-      <div class="row">
-        <div class="col intro">
-          <h1>We're coming soon</h1>
-          <p>Hello fellow shoppers! We're currently building our new fashion store.
-            Add your email below to stay up-to-date with announcements and our launch deals.
-          </p>
+      <form class="form-inline needs-validation" novalidate>
+        <div class="form-group">
+          <input type="email" class="form-control" id="emailAdress" placeholder="Your email adress..." required>
+          <div class="invalid-feedback">
+            Please provide a valid email adress
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col subscribe">
-          <form class="form-inline">
-            <div class="form-row">
-              <div class="col">
-                <input type="email" class="emailAdress" id="emailAdress" placeholder="Email Address" required>
-              </div>
-            </div>
-            <button class="btn btn-primary" type="submit">></button>
-          </form>
-        </div>
-      </div>
+        <button type="submit" class="btn btn-primary"> ></button>
+      </form>
     </div>
-    <div class="col">
-      <img src="images/hero-desktop.jpg" alt="">
+    <div class="col-lg-6 col-md-12 right-column">
     </div>
   </div>
 </div>
